@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --configuration=production --base-href=/paiement-widget-CI-CD/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:widjit-paiement-app": "node dist/widjit-paiement-app/server/server.mjs"
