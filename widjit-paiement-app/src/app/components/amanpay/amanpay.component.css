@@ -1,0 +1,11 @@
+.amanPay {
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    max-width: 800px;
+    padding: 0px;
+    width: 100%;
+    margin: 0 auto; /* Cette ligne centre l'élément horizontalement */
+    height: 620px;
+
+}
