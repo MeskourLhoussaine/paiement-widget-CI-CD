@@ -1,5 +1,5 @@
-<body class="overflow-auto ove">
-  <div class="containerwidget rounded-2xl border border-gray-300 shadow-2xl">
+<body class="outer-container" (mousedown)="onMouseDown($event)" class="overflow-auto ove">
+  <div class="inner-container" [ngStyle]="{ 'top.px': topPosition, 'left.px': leftPosition }" class="containerwidget rounded-2xl border border-gray-300 shadow-2xl">
     
     <div class="btnClose group flex h-20 w-20 cursor-pointer items-center justify-center rounded-2xl"  (click)="redirectToUrl()">
       <div class="space-y-2">
@@ -11,7 +11,7 @@
     <app-header></app-header>
 
     <div class="spacer"></div>
-    <app-steper (optionClicked)="handleOptionClicked($event)"></app-steper>
+    <app-slider (optionClicked)="handleOptionClicked($event)"></app-slider>
 
     <div *ngIf="selectedOptionIndex !== undefined; else defaultOption">
 
@@ -19,6 +19,8 @@
         <app-card *ngIf="selectedOptionIndex === 0"></app-card>
 
         <app-token *ngIf="selectedOptionIndex === 2"></app-token>
+
+        <app-paypal *ngIf="selectedOptionIndex === 6"></app-paypal>
 
     </div>
 

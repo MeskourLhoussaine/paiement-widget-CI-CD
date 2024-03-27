@@ -25,4 +25,30 @@ export class PaimentWedgitComponent {
   redirectToUrl() {
     window.location.href = this.redirectUrl;
   }
+
+  topPosition = 0;
+  leftPosition = 0;
+  isDragging = false;
+
+  onMouseDown(event: MouseEvent) {
+    this.isDragging = true;
+    const startX = event.clientX - this.leftPosition;
+    const startY = event.clientY - this.topPosition;
+
+    const onMouseMove = (moveEvent: MouseEvent) => {
+      if (this.isDragging) {
+        this.leftPosition = moveEvent.clientX - startX;
+        this.topPosition = moveEvent.clientY - startY;
+      }
+    };
+
+    const onMouseUp = () => {
+      this.isDragging = false;
+      document.removeEventListener('mousemove', onMouseMove);
+      document.removeEventListener('mouseup', onMouseUp);
+    };
+
+    document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mouseup', onMouseUp);
+  }
 }
