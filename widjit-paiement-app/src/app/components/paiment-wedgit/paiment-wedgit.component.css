@@ -1,5 +1,4 @@
 .body {
-  background-color: rgba(37, 37, 37, 0.768);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,9 +7,9 @@
 } 
 
 .containerwidget {
-  width: 1000px;
+  width: 1020px;
   /* width: 900px; */
-  min-height: 600px;
+  min-height: 750px;
   height: auto;
   max-width: 100%;
   
@@ -27,6 +26,15 @@
 
   padding: 20px;
 }
+@media screen and (max-width: 1025px) {
+  .containerwidget {
+    width: 1020px;
+    min-height: 800px;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
 
 .spacer {
   height: 34px; 

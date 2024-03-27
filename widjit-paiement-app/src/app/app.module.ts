@@ -17,6 +17,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import {MatStepperModule} from '@angular/material/stepper';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { BrowserModule } from '@angular/platform-browser';
+
 import { NgModule } from "@angular/core";
 
 
@@ -45,8 +46,8 @@ import { NgModule } from "@angular/core";
     BrowserAnimationsModule // Add BrowserAnimationsModule here if you want to use animations
   ],
   providers: [
-   // provideAnimationsAsync('noop'),
-   // provideAnimationsAsync()
+   provideAnimationsAsync('noop'),
+   provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
