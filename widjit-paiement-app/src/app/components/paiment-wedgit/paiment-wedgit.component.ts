@@ -18,13 +18,15 @@ export class PaimentWedgitComponent {
 
   ////////////////////////////redirect close button//////////////////////////////////
 
-  redirectUrl: string = "https://github.com/MeskourLhoussaine/amanpay-front-w";
+  redirectUrl: string = "https://github.com/ANASANASRI/amanpay-front-w";
 
   constructor(private router: Router) {}
 
   redirectToUrl() {
     window.location.href = this.redirectUrl;
   }
+
+  ///////////////////////////////////////////////
 
   topPosition = 0;
   leftPosition = 0;
