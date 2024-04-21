@@ -19,6 +19,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { NgModule } from "@angular/core";
+import { ExeptionPermisionComponent } from './components/exeption-permision/exeption-permision.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { NgModule } from "@angular/core";
     CardinfoComponent,
     StepsComponent,
     GuideComponent,
+    ExeptionPermisionComponent,
   ],
   imports: [
     BrowserModule,
