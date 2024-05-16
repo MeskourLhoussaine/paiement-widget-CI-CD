@@ -1,0 +1,126 @@
+[33mcommit f6bfa9f2b9a8d70f27134128a7ca11f9e480f3e9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: 60b390b 5aee766
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Mon May 6 15:05:28 2024 +0100
+
+    Merge branch 'main' of https://github.com/MeskourLhoussaine/paiement-widget-CI-CD
+
+[33mcommit 60b390b8c568b5a658ff950f68b46cea79d9195e[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Mon May 6 15:04:27 2024 +0100
+
+    commit
+
+[33mcommit 5aee76650518b02a7d03605ddddf7b82371e118d[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Mon May 6 14:35:28 2024 +0100
+
+    Update package.json
+
+[33mcommit 04226f76fcb48e8d90caa252a948c6c38ddc9cfe[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Mon May 6 14:29:58 2024 +0100
+
+    Update main.yaml
+
+[33mcommit e015024cc082820a3ebef8653054edfda89bb3e9[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Mon May 6 14:28:24 2024 +0100
+
+    Update main.yaml
+
+[33mcommit 51bd80a73f7b83254a6c68d71a50f01db5ce76a1[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Mon May 6 14:26:29 2024 +0100
+
+    Update package.json
+
+[33mcommit 27871ddc3b614d8813f462894217a87137b847be[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Sun May 5 21:49:16 2024 +0100
+
+    Update main.yaml
+
+[33mcommit 9eb2804abcf3cacaf43e83ba7571e0bc6d171ad8[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Sun May 5 21:44:35 2024 +0100
+
+    Update main.yaml
+
+[33mcommit 8e2a08c46bc93b66905e26c298bfcb4b3560aa09[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Sun May 5 21:35:53 2024 +0100
+
+    Update main.yaml
+
+[33mcommit 892f8696bdafd74a0aa745806cc8c1a3f9df450e[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Sun May 5 21:31:44 2024 +0100
+
+    Update main.yaml
+
+[33mcommit 6fa2df2e1bbe65e8ed8a499dc4b4165c8bd743c9[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Sat May 4 22:47:20 2024 +0100
+
+    load payment methode
+
+[33mcommit 863edde1314d3822c62331501cc8a5e25482377c[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Sat May 4 19:01:07 2024 +0100
+
+    update wedjit
+
+[33mcommit fa554cd092e159db9e4725655522b46e07cae9cd[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Sun Apr 21 18:20:41 2024 +0100
+
+    ameliorer disigne
+
+[33mcommit 78ee859b8b13fab53a0b3dbf345e3c9276f9b653[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Thu Mar 28 09:04:20 2024 +0000
+
+    change
+
+[33mcommit 660fbb568a6284a655e3c11a44d99a888c185a28[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Wed Mar 27 15:22:35 2024 +0000
+
+    gliss Widget
+
+[33mcommit 30d38db0b0b5dcc3dd90b983f3cd38687c3e44a8[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Wed Mar 27 14:27:18 2024 +0000
+
+    COMMIT
+
+[33mcommit 4b082afdf8120b54102d49bdac4364f0eee7290f[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Mon Mar 25 20:09:22 2024 +0000
+
+    changer infile yaml
+
+[33mcommit 9804336e4ac62495658f05416ebd21d26238f630[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Mon Mar 25 20:07:09 2024 +0000
+
+    widget paiment
+
+[33mcommit cdb15f5a4c614c02adebdb084c5ef3145fe0de81[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Mon Mar 25 13:40:26 2024 +0000
+
+    changed
+
+[33mcommit 5b5262cb987609dcff0cb757ff65a962b61d8fb2[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Mon Mar 25 13:20:47 2024 +0000
+
+    angular app
+
+[33mcommit ad4046b14e6b2b6f993cde41c5b7568c267b7053[m
+Author: MeskourLhoussaine <127257257+MeskourLhoussaine@users.noreply.github.com>
+Date:   Mon Mar 25 13:17:25 2024 +0000
+
+    first commit

@@ -26,4 +26,4 @@ jobs:
         with:
           folder: widjit-paiement-app/dist/browser
           branch: prod  
-          token: ${{ secrets.GHK_TOKEN }}
+          token: ${{ secrets.PY_WIDG}}
