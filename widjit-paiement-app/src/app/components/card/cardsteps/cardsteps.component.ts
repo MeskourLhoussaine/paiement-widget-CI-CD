@@ -7,7 +7,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   styleUrl: './cardsteps.component.css'
 })
 export class CardstepsComponent implements OnInit {
-  nameForm: FormGroup | any; 
+  cardForm: FormGroup | any; 
   emailForm: FormGroup| any; 
 
   constructor(private formBuilder: FormBuilder) { } 
@@ -18,13 +18,16 @@ export class CardstepsComponent implements OnInit {
 
   initializeForms() {
     // Initialize name form with validation
-    this.nameForm = this.formBuilder.group({
-      firstName: ['', Validators.required] // First name field is required
+    this.cardForm = this.formBuilder.group({
+      //cardForm: ['', Validators.required] // First name field is required
     });
 
-    // Initialize email form with validation
-    this.emailForm = this.formBuilder.group({
-      email: ['', [Validators.required, Validators.email]] 
-    });
   }
+
+
+  ///////////////
+  reloadPage() {
+    window.location.reload();
+  }
+  
 }

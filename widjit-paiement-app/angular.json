@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "widjit-paiement-app": {
+    "amanpay-front-w": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -39,27 +39,21 @@
               "src/styles.css"
             ],
             "scripts": [
-              "./node_modules/bootstrap/dist/js/bootstrap.bundle.js",
-              "src/assets/js/cardjs.js"     
-            ],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+                "./node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+            ]
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "1999kb",
+                  "maximumError": "6mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "77kb",
+                  "maximumError": "94kb"
                 }
               ],
               "outputHashing": "all"
@@ -76,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "widjit-paiement-app:build:production"
+              "buildTarget": "amanpay-front-w:build:production"
             },
             "development": {
-              "buildTarget": "widjit-paiement-app:build:development"
+              "buildTarget": "amanpay-front-w:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -87,7 +81,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "widjit-paiement-app:build"
+            "buildTarget": "amanpay-front-w:build"
           }
         },
         "test": {
@@ -111,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

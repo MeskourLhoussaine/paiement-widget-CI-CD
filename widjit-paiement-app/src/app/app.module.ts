@@ -1,58 +1,72 @@
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { AppRoutingModule } from "./app-routing.module";
-import { AppComponent } from "./app.component";
-import { AmanpayComponent } from "./components/amanpay/amanpay.component";
-import { CardComponent } from "./components/card/card.component";
-import { CardinfoComponent } from "./components/card/cardinfo/cardinfo.component";
-import { CardstepsComponent } from "./components/card/cardsteps/cardsteps.component";
-import { HeaderComponent } from "./components/header/header.component";
-import { HomeComponent } from "./components/home/home.component";
-import { PaimentWedgitComponent } from "./components/paiment-wedgit/paiment-wedgit.component";
-import { SteperComponent } from "./components/steper/steper.component";
-import { GuideComponent } from "./components/token/guide/guide.component";
-import { StepsComponent } from "./components/token/steps/steps.component";
-import { TokenComponent } from "./components/token/token.component";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { WidgetComponent } from './components/widget/widget.component';
+import { HeaderComponent } from './components/header/header.component';
+import { TokenComponent } from './components/token/token.component';
+import './app.component.css';
+import { SliderComponent } from './components/slider/slider.component';
+import { CreditcardComponent } from './components/creditcard/creditcard.component';
+import { HomeComponent } from './components/home/home.component';
+import { LogoscrollerComponent } from './components/logoscroller/logoscroller.component';
+import { StepsComponent } from './components/token/steps/steps.component';
+import { GuideComponent } from './components/token/guide/guide.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {MatStepperModule} from '@angular/material/stepper';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CardComponent } from './components/card/card.component';
+import { CardstepsComponent } from './components/card/cardsteps/cardsteps.component';
+import { CardinfoComponent } from './components/card/cardinfo/cardinfo.component';
+import { PaypalComponent } from './components/paypal/paypal.component';
+import { ErrorpermissionComponent } from './components/errorpermission/errorpermission.component';
+import { HttpClientModule } from "@angular/common/http";
+import { TestComponent } from './components/test/test.component';
+import { AmantyComponent } from './components/amanty/amanty.component';
+import { PaydirectComponent } from './components/paydirect/paydirect.component';
+import { CardCongratComponent } from './components/card/card-congrat/card-congrat.component';
 
-import { NgModule } from "@angular/core";
-import { ExeptionPermisionComponent } from './components/exeption-permision/exeption-permision.component';
-import { PlatformService } from "./service/platform.service";
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PaimentWedgitComponent,
-    AmanpayComponent,
-    CardComponent,
-    TokenComponent,
+    WidgetComponent,
     HeaderComponent,
-    SteperComponent,
+    TokenComponent,
+    SliderComponent,
+    CreditcardComponent,
     HomeComponent,
-    CardstepsComponent,
-    CardinfoComponent,
+    LogoscrollerComponent,
     StepsComponent,
     GuideComponent,
-    ExeptionPermisionComponent,
+    CardComponent,
+    CardstepsComponent,
+    CardinfoComponent,
+    PaypalComponent,
+    ErrorpermissionComponent,
+    TestComponent,
+    AmantyComponent,
+    PaydirectComponent,
+    CardCongratComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule,
     MatStepperModule,
     MatFormFieldModule,
-    BrowserAnimationsModule // Add BrowserAnimationsModule here if you want to use animations
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
-   provideAnimationsAsync('noop'),
-   provideAnimationsAsync(),
-   PlatformService
+    provideAnimationsAsync('noop'),
+    provideAnimationsAsync()
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

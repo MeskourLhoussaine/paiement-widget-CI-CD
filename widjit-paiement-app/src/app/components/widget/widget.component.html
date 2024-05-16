@@ -1,0 +1,36 @@
+<body class="outer-container" (mousedown)="onMouseDown($event)" class="overflow-auto ove">
+  <div class="inner-container" [ngStyle]="{ 'top.px': topPosition, 'left.px': leftPosition }" class="containerwidget rounded-2xl border-2 border-gray-300 shadow-2xl">
+    
+    <div class="btnClose group flex h-20 w-20 cursor-pointer items-center justify-center rounded-2xl"  (click)="redirectToUrl()">
+      <div class="space-y-2">
+        <span class="block h-1 w-10 origin-center rounded-full bg-gray-400 transition-transform ease-in-out group-hover:translate-y-1.5 group-hover:rotate-45"></span>
+        <span class="block h-1 w-8 origin-center rounded-full bg-emerald-400 transition-transform ease-in-out group-hover:w-10 group-hover:-translate-y-1.5 group-hover:-rotate-45"></span>
+      </div>
+    </div>
+    
+    <app-header></app-header>
+
+    <div class="spacer"></div>
+    <app-slider (optionClicked)="handleOptionClicked($event)"></app-slider>
+
+    <div *ngIf="selectedOptionIndex !== undefined; else defaultOption">
+
+        <!-- <app-creditcard *ngIf="selectedOptionIndex === 0"></app-creditcard> -->
+        <app-card *ngIf="selectedOptionIndex === 2"></app-card>
+
+        <app-token *ngIf="selectedOptionIndex === 1"></app-token>
+
+        <app-amanty *ngIf="selectedOptionIndex === 3"></app-amanty>
+
+        <app-paydirect *ngIf="selectedOptionIndex === 4"></app-paydirect>
+
+        <app-paypal *ngIf="selectedOptionIndex === 5"></app-paypal>
+
+    </div>
+
+    <ng-template #defaultOption>
+        <app-home></app-home>
+    </ng-template>
+
+</div>
+</body>
