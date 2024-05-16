@@ -19,7 +19,7 @@ export class WidgetComponent {
   ////////////////////////////redirect close button//////////////////////////////////
 
   // redirectUrl: string = "https://anasanasri.github.io/WidgetTest/";
-  redirectUrl: string = "file:///C:/Users/anasa/OneDrive/Desktop/testTheWidgetWt1/index.html";
+  redirectUrl: string = "file:///C:/Users/Meskour/Desktop/SiteForTestingWidget/index.html";
 
   constructor(private router: Router) {}
 

@@ -1,6 +1,6 @@
 export interface PaymentMethod {
     paymentMethodId: number;
-    methodDescription: String;
-    methodIconUrl: string;
-    methodName: string;
+    description: String;
+    iconUrl: string;
+    name: string;
 }
