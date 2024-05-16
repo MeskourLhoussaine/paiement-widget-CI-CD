@@ -20,6 +20,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { NgModule } from "@angular/core";
 import { ExeptionPermisionComponent } from './components/exeption-permision/exeption-permision.component';
+import { PlatformService } from "./service/platform.service";
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { ExeptionPermisionComponent } from './components/exeption-permision/exep
   ],
   providers: [
    provideAnimationsAsync('noop'),
-   provideAnimationsAsync()
+   provideAnimationsAsync(),
+   PlatformService
   ],
   bootstrap: [AppComponent]
 })
