@@ -9,7 +9,7 @@ import { PaymentMethod } from '../model/payment-method.model';
 })
 export class MarchandMethodsService {
 
-  private baseUrl = 'http://localhost:8080/marchand'; 
+  private baseUrl = 'http://localhost:8080/api/merchants'; 
 
   constructor(private http: HttpClient) {}
 
