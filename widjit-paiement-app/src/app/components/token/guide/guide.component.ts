@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, Renderer2, ViewChild } from '@angular/core';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 
@@ -10,7 +10,9 @@ import jsPDF from 'jspdf';
 export class GuideComponent {
   @ViewChild('content') content!: ElementRef;
   @ViewChild('sectionToExclude') sectionToExclude!: ElementRef;
+  @Input() receivedToken!: string;
 
+  constructor(private renderer: Renderer2, private el: ElementRef) {}
 
 
     // Pdf downloading
@@ -68,7 +70,7 @@ export class GuideComponent {
     
             // Add content image with padding
             pdf.addImage(imgData, 'PNG', 0, paddingTop, imgWidth, imgHeight);
-            pdf.save('content.pdf');
+            pdf.save('token.pdf');
 
             // // Show the section again after generating the PDF
             // sectionToExclude.style.display = 'block';
@@ -84,18 +86,37 @@ export class GuideComponent {
     @ViewChild('number', { static: false }) numberElement!: ElementRef;
   isCopied: boolean = false;
 
+  
   copyNumber() {
-    const numberText = this.numberElement.nativeElement.textContent;
-    navigator.clipboard.writeText(numberText).then(() => {
-      console.log('Number copied to clipboard');
-      this.isCopied = true;
+    // Create a text node with the value of receivedToken
+    const textNode = this.renderer.createText(this.receivedToken || '');
+    // Append the text node to the component's native element
+    this.renderer.appendChild(this.el.nativeElement, textNode);
 
+    try {
+      // Select the text
+      const range = document.createRange();
+      range.selectNode(textNode);
+      window.getSelection()?.removeAllRanges();
+      window.getSelection()?.addRange(range);
       
+      // Copy the selected text
+      document.execCommand('copy');
+      
+      // Reset isCopied after a certain duration
+      this.isCopied = true;
       setTimeout(() => {
         this.isCopied = false;
-      }, 2200);
-    }).catch(err => {
-      console.error('Failed to copy: ', err);
-    });
+      }, 2000); // 2 seconds
+
+      // Clean up: remove the text node and clear the selection
+      window.getSelection()?.removeAllRanges();
+      this.renderer.removeChild(this.el.nativeElement, textNode);
+    } catch (err) {
+      console.error('Unable to copy:', err);
+    }
   }
+  
+  
+
 }

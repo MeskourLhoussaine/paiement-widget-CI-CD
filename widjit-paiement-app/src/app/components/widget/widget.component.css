@@ -4,28 +4,29 @@
   align-items: center;
   height: 100vh;
   margin: 0;
-} 
+}
 
 .containerwidget {
   width: 1020px;
   /* width: 900px; */
-  min-height: 750px;
+  min-height: 700px;
+
   height: auto;
   max-width: 100%;
-  
+
   margin: 0 auto; /* Center the container horizontally */
   flex-direction: column; /* Arrange child elements vertically */
   align-items: center; /* Center child elements horizontally */
   z-index: 3;
   /* background-color: rgb(241, 243, 241); */
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
 
   padding: 15px 15px 15px 15px;
   margin-top: 2.5%;
   margin-bottom: 2.5%;
   position: relative;
 
-  padding: 20px;
+  padding: 15px;
 }
 
 @media screen and (max-width: 1025px) {
@@ -33,18 +34,18 @@
     width: 1020px;
     min-height: 800px;
     height: auto;
-    max-width: 100%;
+    max-width: 90%;
   }
 }
 
 .spacer {
-  height: 34px; 
+  height: 34px;
 }
 .spacer2 {
-  height: 27px; 
+  height: 27px;
 }
 
-.btnClose{
+.btnClose {
   position: absolute;
   right: 0;
   top: 0;
@@ -53,7 +54,8 @@
 }
 
 .shadow-2xl {
-  --tw-shadow: 0 25px 1000px -12px rgba(0, 0, 0, 0.399);
+  --tw-shadow: 0 25px 1000px -12px rgba(19, 67, 26, 0.844);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }

@@ -18,16 +18,14 @@ export class WidgetComponent {
 
   ////////////////////////////redirect close button//////////////////////////////////
 
-  // redirectUrl: string = "https://anasanasri.github.io/WidgetTest/";
-  redirectUrl: string = "file:///C:/Users/Meskour/Desktop/SiteForTestingWidget/index.html";
-
-  constructor(private router: Router) {}
+  constructor() {}
 
   redirectToUrl() {
-    window.location.href = this.redirectUrl;
+    window.parent.postMessage('closeWidget', '*');
   }
 
   ////////////////////////////enable move widget////////////////////////////////
+
 
   topPosition = 0;
   leftPosition = 0;
