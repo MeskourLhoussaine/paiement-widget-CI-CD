@@ -42,7 +42,8 @@ export class StepsComponent implements OnInit {
 
   reloadPage() {
     window.location.reload();
-  } /*
+  }
+  /*
   generateToken() {
     const name = this.nameForm.get('firstName')?.value || ''; // Get name from form
     const email = this.emailForm.get('email')?.value || ''; // Get email from form
@@ -71,23 +72,32 @@ export class StepsComponent implements OnInit {
   }*/
 
   
-  generateToken() {
-    const name = this.nameForm.get('firstName')?.value || ''; // Get name from form
-    const email = this.emailForm.get('email')?.value || ''; // Get email from form
-    const orderId = this.dataService.orderId || ''; // Get orderId from DataService
-    const orderAmount = this.dataService.amount || ''; // Get orderAmount from DataService
-    const currency = this.dataService.currency || ''; // Get currency from DataService
-    const marchandId = this.dataService.marchandId || ''; // Get marchandId from DataService
-
-
-    this.tokenService.generateToken(orderId, orderAmount.toString(), name, email, currency, marchandId.toString()).subscribe(
-      token => {
-        this.token=token,
-        console.log('Token:', token); 
-      },
-      error => {
-        console.log('token error'); 
+      generateToken() {
+        const name = this.nameForm.get('firstName')?.value || ''; // Get name from form
+        const email = this.emailForm.get('email')?.value || ''; // Get email from form
+        const orderId = this.dataService.orderId || ''; // Get orderId from DataService
+        const orderAmount = this.dataService.amount || ''; // Get orderAmount from DataService
+        const currency = this.dataService.currency || ''; // Get currency from DataService
+        const marchandId = this.dataService.marchandId || ''; // Get marchandId from DataService
+    
+        this.tokenService.generateToken(orderId, orderAmount.toString(), name, email, currency, marchandId.toString()).subscribe(
+          token => {
+            this.token = token;
+            console.log('Token:', token); 
+            this.tokenService.sendTokenToMail(name, email, token).subscribe(
+              response => {
+                console.log('Token sent to email:', response);
+              },
+              error => {
+                console.log('Error sending token to email:', error);
+              }
+            );
+          },
+          error => {
+            this.token = "problème-de-génération-du-token";
+            console.log('Token error:', error); 
+          }
+        );
+    
       }
-    );
-  }
 }
