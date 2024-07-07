@@ -1,4 +1,4 @@
-<div class="mt-16 flex justify-center items-center">
+<!--<div class="mt-16 flex justify-center items-center">
   <div class="p-10v-mt-10  rounded-md flex flex-col items-center space-y-3">
     <div class="py-8">
       <img width="30" class="hover:scale-110 duration-700 -mt-10" src="https://www.paypalobjects.com/images/shared/momgram@2x.png" />
@@ -15,5 +15,25 @@
       </div>
       <button class="w-full border-blue-900 hover:border-[#003087] hover:border-[2px] border-[1px] rounded-3xl p-3 text-[#0070ba] font-bold transition duration-200">S'inscrire</button>
   </div>
+  </div>
+</div>*/--->
+<div class="mt-16 flex justify-center items-center">
+  <div class="p-10 rounded-md flex flex-col items-center space-y-3">
+    <div class="pt-8 pb-3">
+      <img
+        width="50"
+        class="hover:scale-110 duration-700 -mt-10"
+        src="https://www.paypalobjects.com/images/shared/momgram@2x.png"
+      />
+    </div>
+
+    <div id="paypal-button-container" class="mt-5 scale-150"></div>
+
+    <p class="text-blue-900">
+      Vous serez redirigé(e) vers PayPal pour finaliser votre achat en toute
+      sécurité.<br />
+      Montant total :
+      <span class="font-bold">{{ orderAmount }} {{ currency }}</span>
+    </p>
   </div>
 </div>
