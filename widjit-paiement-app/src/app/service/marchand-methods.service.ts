@@ -16,7 +16,9 @@ export class MarchandMethodsService {
   getMarchandPaymentMethods(marchandId: number): Observable<PaymentMethod[]> {
     return this.http.get<PaymentMethod[]>(`${this.baseUrl}/methods/${marchandId}`).pipe(
       catchError(this.handleError)
+     
     );
+   
   }
 
   private handleError(error: any) {
