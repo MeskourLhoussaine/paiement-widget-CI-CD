@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-widget',
   templateUrl: './widget.component.html',
-  styleUrl: './widget.component.css'
+  styleUrls: ['./widget.component.css']
 })
 export class WidgetComponent {
 
@@ -13,7 +12,7 @@ export class WidgetComponent {
   handleOptionClicked(index: number) {
     console.log('Index of clicked option:', index);
     this.selectedOptionIndex = index;
-    console.log('selected',this.selectedOptionIndex);
+    console.log('selected', this.selectedOptionIndex);
   }
 
   ////////////////////////////redirect close button//////////////////////////////////
@@ -25,7 +24,6 @@ export class WidgetComponent {
   }
 
   ////////////////////////////enable move widget////////////////////////////////
-
 
   topPosition = 0;
   leftPosition = 0;
