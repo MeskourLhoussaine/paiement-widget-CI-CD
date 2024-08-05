@@ -1,11 +1,28 @@
-{
-  "Enter your name": "ادخل اسمك",
-  "First name": "الاسم الأول",
-  "Enter your email": "ادخل بريدك الإلكتروني",
-  "Email address": "عنوان البريد الإلكتروني",
-  "Next": "التالي",
-  "Back": "العودة",
-  "Get your token": "احصل على رمزك",
-  "Obtenir votre code commande": "احصل على رمز طلبك",
-  "Done": "تم"
-}
+
+  {
+    "STEP_1_TITLE": "الخطوة 1",
+    "TOKEN": "رمز",
+    "STEP1_LABEL": "أدخل اسمك الأول واسم العائلة",
+    "FIRST_NAME_PLACEHOLDER": "الاسم الأول",
+    "NEXT_BUTTON": "التالي",
+    "STEP2_LABEL": "أدخل بريدك الإلكتروني",
+    "EMAIL_PLACEHOLDER": "عنوان البريد الإلكتروني",
+    "BACK_BUTTON": "رجوع",
+    "GET_CODE_BUTTON": "احصل على رمز الطلب الخاص بك",
+    "STEP3_LABEL": "احصل على رمز الطلب الخاص بك",
+    "FINISH_BUTTON": "انتهى",
+    
+      "note_code": "دوّن بعناية رمز الطلب الخاص بك",
+      "token": "رمز",
+      "download_pdf": "تحميل PDF",
+      "agency": "اذهب إلى الوكالة",
+      "chaabi_cash": "شعبي كاش",
+      "tasshilat": "تسهيلات",
+      "payment_code": "طلب الدفع مقابل رمز الطلب",
+      "present_agent": "قدّم للوكيل رمزك وادفع المبلغ.",
+        "plu_proche":"  الأقرب",
+          "ou":"أو"
+    
+  }
+  
+
