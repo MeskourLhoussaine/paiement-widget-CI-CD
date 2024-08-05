@@ -1,13 +1,23 @@
 {
-    "Enter your name": "Enter your name",
-    "First name": "First name",
-    "Enter your email": "Enter your email",
-    "Email address": "Email address",
-    "Next": "Next",
-    "Back": "Back",
-    "Get your token": "Get your token",
-    "Obtain your order code": "Obtain your order code",
-    "Done": "Done",
-    "Select Language": "Select Language"
-  }
-  
+  "STEP_1_TITLE": "Step 1",
+  "TOKEN": "Token",
+  "STEP1_LABEL": "Enter your first name and last name",
+  "FIRST_NAME_PLACEHOLDER": "First Name",
+  "NEXT_BUTTON": "Next",
+  "STEP2_LABEL": "Enter your email address",
+  "EMAIL_PLACEHOLDER": "Email Address",
+  "BACK_BUTTON": "Back",
+  "GET_CODE_BUTTON": "Get your order code",
+  "STEP3_LABEL": "Get your token code",
+  "FINISH_BUTTON": "Finish",
+  "note_code": "Carefully note your order code",
+  "token": "Token",
+  "download_pdf": "Download PDF",
+  "agency": "Go to the agency",
+  "chaabi_cash": "Chaabi Cash",
+  "tasshilat": "Tasshilat",
+  "payment_code": "Request payment for the order code",
+  "present_agent": "Present your code to the agent and pay the amount.",
+  "plu_proche": "closest",
+  "ou": "Or"
+}

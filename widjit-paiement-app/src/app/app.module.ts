@@ -23,12 +23,17 @@ import { CardstepsComponent } from './components/card/cardsteps/cardsteps.compon
 import { CardinfoComponent } from './components/card/cardinfo/cardinfo.component';
 import { PaypalComponent } from './components/paypal/paypal.component';
 import { ErrorpermissionComponent } from './components/errorpermission/errorpermission.component';
-import { HttpClientModule } from "@angular/common/http";
+import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { TestComponent } from './components/test/test.component';
 import { AmantyComponent } from './components/amanty/amanty.component';
 import { PaydirectComponent } from './components/paydirect/paydirect.component';
 import { CardCongratComponent } from './components/card/card-congrat/card-congrat.component';
 import { PaydirectinfoComponent } from './components/paydirect/paydirectinfo/paydirectinfo.component';
+import { LangueComponent } from './components/langue/langue.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpLoaderFactory } from './service/translate-http-loader.service';
+
 
 
 
@@ -55,6 +60,9 @@ import { PaydirectinfoComponent } from './components/paydirect/paydirectinfo/pay
     PaydirectComponent,
     CardCongratComponent,
     PaydirectinfoComponent,
+    LangueComponent,
+
+   
   ],
   imports: [
     BrowserModule,
@@ -63,7 +71,14 @@ import { PaydirectinfoComponent } from './components/paydirect/paydirectinfo/pay
     MatStepperModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [
     provideAnimationsAsync('noop'),

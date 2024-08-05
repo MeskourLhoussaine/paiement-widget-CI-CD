@@ -1,13 +1,28 @@
-{
-    "Enter your name": "Entrez votre nom",
-    "First name": "Prénom",
-    "Enter your email": "Entrez votre email",
-    "Email address": "Adresse électronique",
-    "Next": "Suivant",
-    "Back": "Retour",
-    "Get your token": "Obtenez votre jeton",
-    "Obtain your order code": "Obtenez votre code commande",
-    "Done": "Terminé",
-    "Select Language": "Choisir la langue"
+
+  {
+    "STEP_1_TITLE": "Étape 1",
+  "TOKEN": "Jeton",
+    "STEP1_LABEL": "Entrez votre nom, prénom",
+    "FIRST_NAME_PLACEHOLDER": "Nom, Prénom",
+    "NEXT_BUTTON": "Suivant",
+    "STEP2_LABEL": "Entrez votre e-mail",
+    "EMAIL_PLACEHOLDER": "Adresse E-mail",
+    "BACK_BUTTON": "Retour",
+    "GET_CODE_BUTTON": "Obtenir votre code commande",
+    "STEP3_LABEL": "Obtenez votre jeton 'Token'",
+    "FINISH_BUTTON": "Terminé",
+
+    "note_code": "Notez soigneusement votre code commande",
+    "token": "Token",
+    "download_pdf": "Télécharger PDF",
+    "agency": "Rendez-vous à l’agence",
+    "chaabi_cash": "Chaabi Cash",
+    "tasshilat": "Tasshilat",
+    "payment_code": "Demandez le paiement d'un Code Commande",
+    "present_agent": "Présentez à l'agent votre code et réglez l'achat.",
+    "plu_proche":"la plus proche",
+    "ou":"Ou"
   }
+  
+  
   
