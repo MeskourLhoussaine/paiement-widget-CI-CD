@@ -19,5 +19,29 @@
   "payment_code": "Request payment for the order code",
   "present_agent": "Present your code to the agent and pay the amount.",
   "plu_proche": "closest",
-  "ou": "Or"
+  "ou": "Or",
+
+
+  "FORM": {
+    "PLACEHOLDERS": {
+      "CONTRACT_NUMBER": "Contract Number",
+      "PHONE_NUMBER": "Phone Number",
+      "EMAIL_ADDRESS": "Email Address",
+      "CIN": "CIN",
+      "MANDATE_NAME": "Mandate Name"
+    },
+    "BUTTONS": {
+      "SUBMIT": "Submit"
+    }
+  },
+
+  "STEP_2_TITLE": "Card Payment",
+  "DONE": "Done",
+  "BUTTON_DONE": "Done",
+
+  "PAYPAL_REDIRECT_PART1": "You will be redirected to PayPal to complete your purchase securely.",
+  "PAYPAL_REDIRECT_PART2": "Total amount",
+
+  "AMOUNT": "Amount ",
+  "ORDER": "Order "
 }
