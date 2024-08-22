@@ -1,18 +1,14 @@
 <mat-horizontal-stepper labelPosition="bottom" [linear]="true" #stepper>
+  <mat-step [label]="'STEP_2_TITLE' | translate" [editable]="false">
+    <app-paydirectinfo></app-paydirectinfo>
+  </mat-step>
 
-    <mat-step label="Paiement par carte" [editable]="false">
-    
-        <app-paydirectinfo></app-paydirectinfo>
-    
-    </mat-step>
-
-
-    <mat-step label="done"  >
-    <app-card-congrat></app-card-congrat>      
+  <mat-step [label]="'DONE' | translate">
+    <app-card-congrat></app-card-congrat>
     <div class="flex justify-end">
-        <button mat-button  routerLink="<app-home/>" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
-        Done
-        </button>
+      <button mat-button routerLink="<app-home/>" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
+        {{ 'BUTTON_DONE' | translate }}
+      </button>
     </div>
-    </mat-step>
+  </mat-step>
 </mat-horizontal-stepper>

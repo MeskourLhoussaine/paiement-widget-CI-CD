@@ -3,9 +3,12 @@
     <div class="pt-8 pb-3">
       <img width="50" class="hover:scale-110 duration-700 -mt-10" src="https://www.paypalobjects.com/images/shared/momgram@2x.png" />
     </div>
-    
+
     <div id="paypal-button-container" class="mt-5 scale-150"></div>
 
-    <p class="text-blue-900">Vous serez redirigé(e) vers PayPal pour finaliser votre achat en toute sécurité.<br> Montant total : <span class="font-bold">{{orderAmount}} {{currency}}</span></p>
+    <p class="text-blue-900">
+      {{ 'PAYPAL_REDIRECT_PART1' | translate }}<br><span class="font-bold">{{orderAmount}} {{currency}}</span>
+      {{'PAYPAL_REDIRECT_PART2' | translate}}
+    </p>
   </div>
 </div>

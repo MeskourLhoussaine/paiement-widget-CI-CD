@@ -21,8 +21,31 @@
       "payment_code": "طلب الدفع مقابل رمز الطلب",
       "present_agent": "قدّم للوكيل رمزك وادفع المبلغ.",
         "plu_proche":"  الأقرب",
-          "ou":"أو"
-    
+          "ou":"أو",
+       
+        "FORM": {
+    "PLACEHOLDERS": {
+      "CONTRACT_NUMBER": "رقم العقد",
+      "PHONE_NUMBER": "رقم الهاتف",
+      "EMAIL_ADDRESS": "عنوان البريد الإلكتروني",
+      "CIN": "رقم التعريف الوطني",
+      "MANDATE_NAME": "اسم الوكيل"
+    },
+
+    "BUTTONS": {
+      "SUBMIT": "تأكيد"
+    }
+  },
+
+    "STEP_2_TITLE": "الدفع بواسطة البطاقة",
+  "DONE": "تم",
+  "BUTTON_DONE": "تم",
+ 
+"PAYPAL_REDIRECT_PART1": "سيتم توجيهك إلى PayPal لإكمال عملية الشراء بأمان.",
+  "PAYPAL_REDIRECT_PART2": "المبلغ الإجمالي ",
+
+  "AMOUNT": "المبلغ",
+  "ORDER": "الطلب "
   }
   
 
